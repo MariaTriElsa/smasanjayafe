@@ -74,7 +74,6 @@
 													 src="<?= 'http://localhost/smasanjaya/upload/' . $b->gambar_berita ?>"
 												><br>
 												<div class="text-left"><?= $b->deskripsi_berita ?></div>
-
 											</div>
 										</div>
 									</div>

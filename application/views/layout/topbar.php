@@ -21,6 +21,15 @@
 						<div class="limit-box">
 							<nav class="main-menu">
 								<ul class="menu-area-main">
+								<!-- mulai sini -->
+								<li class="menu-item-has-children">
+                                <a href="#">Staff</a>
+								 <ul class="sub-menu">
+                                	<li><a href="https://smksanjaya.sch.id/guru">Guru</a></li>
+                                    <li><a href="https://smksanjaya.sch.id/tenaga-kependidikan">Tenaga Kependidikan</a></li>
+                                    <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div></ul>
+									<span class="rs-menu-parent"><i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
+									
 									<li><a href="<?= base_url() ?>">Home</a></li>
 									<li><a href="#about">About</a></li>
 									<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
