@@ -1,3 +1,4 @@
+
 <!-- header -->
 <div class="loader_bg">
 	<div class="loader"><img src="<?= base_url('assets/images/loading2.gif') ?>" alt="#"/></div>
@@ -22,45 +23,20 @@
 								<ul class="menu-area-main">
 									<li><a href="<?= base_url() ?>">Home</a></li>
 									<li><a href="#about">About</a></li>
-									<li><a href="<?= base_url('/staffuser') ?>">Staff</a></li>
-									<li><a href="#galeri">Galeri</a></li>
-									<li><a href="#service" onclick="openNav()">Prestasi</a></li>
-									<div class="dropdown ">
-									<button class="dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Lainnya</button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a  class="dropdown-item" href="<?= base_url('/berita') ?>">Berita</a>
-										<a class="dropdown-item" href="<?= base_url('/pengumuman') ?>">Pengumuman</a>
-										<a class="dropdown-item" href="<?= base_url('/berkas') ?>">Berkas</a>
-										<a  class="dropdown-item" href="<?= base_url('/kontak') ?>">Kontak</a>
-									</div>
-									</div>
-									<!-- <li><a href="#others" onclick="openNav()">Lainnya</a></li>
-									<div id="myNav" class="overlay">
-										<a href="javascript:void(0)"
-										   class="closebtn"
-										   onclick="closeNav()">×</a>
-										<div class="overlay-content">
-											<a href="<?= base_url('/berita') ?>">Berita</a>
-											<a href="<?= base_url('/pengumuman') ?>">Pengumuman</a>
-											<a href="<?= base_url('/berkas') ?>">Unduh</a>
-											<a href="<?= base_url('/kontak') ?>">Kontak</a>
+									<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
+									<li><a href="#about">Galeri</a></li>
+									<li><a href="#service">Prestasi</a></li>
+									<li class="dropdown">
+										<a href="javascript:void(0)" class="dropbtn">Lain-Lain</a>
+										<div class="rounded dropdown-content">
+											<a class="rounded p-3" href="<?= base_url('/berita') ?>">Berita</a>
+											<a class="rounded p-3" href="#">Pengumuman</a>
+											<a class="rounded p-3" href="<?= base_url('/berkas') ?>">Unduh</a>
+											<a class="rounded p-3" href="#">Kontak</a>
+											<a class="rounded p-3" href="http://localhost/smasanjaya/aboutus" target="_blank">Login</a>
 										</div>
-									</div>
+									</li>
 
-
-									<script>
-										function openNav() {
-											document.getElementById("myNav")
-												.style.height = "100%";
-										}
-
-										function closeNav() {
-											document.getElementById("myNav")
-												.style.height = "0%";
-										}
-									</script> -->
-								</ul>
 								</ul>
 							</nav>
 						</div>

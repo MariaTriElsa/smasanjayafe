@@ -6,10 +6,6 @@ class Staff extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("ModelStaff");
-		$this->check_login();
-		if ($this->session->userdata('id_role') != "1") {
-			redirect('', 'refresh');
-		}
 	}
 
 	public function index()
@@ -18,10 +14,7 @@ class Staff extends CI_Controller
         $data = array(
             "staff" => $dataStaff
         );
-        $this->load->view('header');
         $this->load->view('content/staff/v_list_staff', $data);
-        $this->load->view('footer');
-
     }
 
     // untuk me-load tampilan form tambah barang
