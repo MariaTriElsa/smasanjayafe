@@ -44,16 +44,6 @@
         </div>
         <div class="card-body">
             <table class="table">
-                <thead>
-                    <tr>
-                        <th>Nomor</th>
-                        <th>Judul</th>
-                        <th>Deskripsi</th>
-                        <th>Gambar</th>
-                        <th>Tanggal</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <?php
                     $no = 1;

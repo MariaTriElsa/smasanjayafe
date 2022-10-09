@@ -25,7 +25,6 @@
 								<div class="blog-box">
 									<div style="text-align: center;">
 										<figure>
-											<a href="<?= 'http://localhost/smasanjaya/upload/' . $s->foto ?>" download="fff">
 												<img src="<?= 'http://localhost/smasanjaya/upload/' . $s->foto ?>" alt="#"
 													 class="rounded img-bordered img-fluid">
 											</a>

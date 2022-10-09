@@ -34,6 +34,7 @@
 									<div class="travel">
 										<div class="text-center"><h4><?= $s->nama_berita ?></h4></div>
 										<hr>
+										<div class="text-center"><?= $s->tanggal ?></div>
 										<div class="text-center"><?= $s->deskripsi_berita ?></div>
 									</div>
 								</div>

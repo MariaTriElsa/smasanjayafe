@@ -29,11 +29,11 @@
 									<li class="dropdown">
 										<a href="javascript:void(0)" class="dropbtn">Lain-lain ><</a>
 										<div class="rounded dropdown-content">
-											<a class="rounded p-3" href="#">Berita</a>
+											<a class="rounded p-3" href="<?= base_url('/berita') ?>">Berita</a>
 											<a class="rounded p-3" href="#">Pengumuman</a>
 											<a class="rounded p-3" href="<?= base_url('/berkas') ?>">Unduh</a>
 											<a class="rounded p-3" href="#">Kontak</a>
-											<a class="rounded p-3" href="<?= base_url('/aboutus') ?>">Login</a>
+											<a class="rounded p-3" href="http://localhost/smasanjaya/aboutus" target="_blank">Login</a>
 										</div>
 									</li>
 								</ul>
