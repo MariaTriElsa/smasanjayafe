@@ -25,7 +25,17 @@
 									<li><a href="<?= base_url('/staffuser') ?>">Staff</a></li>
 									<li><a href="#galeri">Galeri</a></li>
 									<li><a href="#service" onclick="openNav()">Prestasi</a></li>
-									<li><a href="#others" onclick="openNav()">Lainnya</a></li>
+									<div class="dropdown ">
+									<button class="dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Lainnya</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a  class="dropdown-item" href="<?= base_url('/berita') ?>">Berita</a>
+										<a class="dropdown-item" href="<?= base_url('/pengumuman') ?>">Pengumuman</a>
+										<a class="dropdown-item" href="<?= base_url('/berkas') ?>">Berkas</a>
+										<a  class="dropdown-item" href="<?= base_url('/kontak') ?>">Kontak</a>
+									</div>
+									</div>
+									<!-- <li><a href="#others" onclick="openNav()">Lainnya</a></li>
 									<div id="myNav" class="overlay">
 										<a href="javascript:void(0)"
 										   class="closebtn"
@@ -49,10 +59,8 @@
 											document.getElementById("myNav")
 												.style.height = "0%";
 										}
-									</script>
+									</script> -->
 								</ul>
-
-
 								</ul>
 							</nav>
 						</div>
