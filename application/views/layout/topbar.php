@@ -1,3 +1,4 @@
+
 <!-- header -->
 <div class="loader_bg">
 	<div class="loader"><img src="<?= base_url('assets/images/loading2.gif') ?>" alt="#"/></div>
@@ -22,37 +23,19 @@
 								<ul class="menu-area-main">
 									<li><a href="<?= base_url() ?>">Home</a></li>
 									<li><a href="#about">About</a></li>
-									<li><a href="<?= base_url('/staffuser') ?>">Staff</a></li>
-									<li><a href="#galeri">Galeri</a></li>
-									<li><a href="#service" onclick="openNav()">Prestasi</a></li>
-									<li><a href="#others" onclick="openNav()">Lainnya</a></li>
-									<div id="myNav" class="overlay">
-										<a href="javascript:void(0)"
-										   class="closebtn"
-										   onclick="closeNav()">×</a>
-										<div class="overlay-content">
-											<a href="<?= base_url('/berita') ?>">Berita</a>
-											<a href="<?= base_url('/pengumuman') ?>">Pengumuman</a>
-											<a href="<?= base_url('/berkas') ?>">Unduh</a>
-											<a href="<?= base_url('/kontak') ?>">Kontak</a>
+									<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
+									<li><a href="#about">Galeri</a></li>
+									<li><a href="#service">Prestasi</a></li>
+									<li class="dropdown">
+										<a href="javascript:void(0)" class="dropbtn">Lain-lain ><</a>
+										<div class="rounded dropdown-content">
+											<a class="rounded p-3" href="#">Berita</a>
+											<a class="rounded p-3" href="#">Pengumuman</a>
+											<a class="rounded p-3" href="<?= base_url('/berkas') ?>">Unduh</a>
+											<a class="rounded p-3" href="#">Kontak</a>
+											<a class="rounded p-3" href="<?= base_url('/aboutus') ?>">Login</a>
 										</div>
-									</div>
-
-
-									<script>
-										function openNav() {
-											document.getElementById("myNav")
-												.style.height = "100%";
-										}
-
-										function closeNav() {
-											document.getElementById("myNav")
-												.style.height = "0%";
-										}
-									</script>
-								</ul>
-
-
+									</li>
 								</ul>
 							</nav>
 						</div>

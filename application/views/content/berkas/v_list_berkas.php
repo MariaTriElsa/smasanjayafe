@@ -38,7 +38,7 @@
 							<td><?= $b->file_berkas ?></td>
 							<td>
 								<a class="btn btn-sm btn-primary text-white"
-								   href="<?= base_url('upload/' . $b->file_berkas) ?>" download="<?= $b->nama_berkas ?>">
+								   href="<?= 'http://localhost/smasanjaya/upload/' . $b->file_berkas ?>" download="<?= $b->nama_berkas ?>">
 									<i class="fa fa-download"></i>
 								</a>
                             </td>

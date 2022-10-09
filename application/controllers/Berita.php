@@ -14,8 +14,6 @@ class Berita extends CI_Controller
 		$data = array(
 			"berita" => $dataBerita
 		);
-		$this->load->view('header');
 		$this->load->view('content/berita/v_list_berita', $data);
-		$this->load->view('footer');
 	}
 }
