@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->load->view('layout/header'); ?>
-<?php $this->load->view('layout/topbar'); ?>
+
 <body>
+<?php $this->load->view('layout/topbar'); ?>
 <section class="slider_section>">
 	<div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
 		<div class="carousel-inner">

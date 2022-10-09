@@ -1,57 +1,36 @@
+<nav class="sticky-top">
+	<div id="logo">Your Logo here</div>
 
-<!-- header -->
-<div class="loader_bg">
-	<div class="loader"><img src="<?= base_url('assets/images/loading2.gif') ?>" alt="#"/></div>
-</div>
-
-<header class="sticky-top">
-	<!-- header inner -->
-	<!-- header inner -->
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-					<div class="full">
-						<div class="align-left m-1">
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-					<div class="menu-area">
-						<div class="limit-box">
-							<nav class="main-menu">
-								<ul class="menu-area-main">
-								<!-- mulai sini -->
-								<li class="menu-item-has-children">
-                                <a href="#">Staff</a>
-								 <ul class="sub-menu">
-                                	<li><a href="https://smksanjaya.sch.id/guru">Guru</a></li>
-                                    <li><a href="https://smksanjaya.sch.id/tenaga-kependidikan">Tenaga Kependidikan</a></li>
-                                    <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div></ul>
-									<span class="rs-menu-parent"><i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
-									
-									<li><a href="<?= base_url() ?>">Home</a></li>
-									<li><a href="#about">About</a></li>
-									<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
-									<li><a href="#about">Galeri</a></li>
-									<li><a href="#service">Prestasi</a></li>
-									<li class="dropdown">
-										<a href="javascript:void(0)" class="dropbtn">Lain-Lain</a>
-										<div class="rounded dropdown-content">
-											<a class="rounded p-3" href="<?= base_url('/berita') ?>">Berita</a>
-											<a class="rounded p-3" href="#">Pengumuman</a>
-											<a class="rounded p-3" href="<?= base_url('/berkas') ?>">Unduh</a>
-											<a class="rounded p-3" href="#">Kontak</a>
-											<a class="rounded p-3" href="http://localhost/smasanjaya/aboutus" target="_blank">Login</a>
-										</div>
-									</li>
-
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+	<label for="drop" class="toggle">Menu</label>
+	<input type="checkbox" id="drop" />
+	<ul class="menu">
+		<li><a href="<?= base_url() ?>">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
+		<li>
+			<!-- First Tier Drop Down -->
+			<label for="drop-1" class="toggle">Galeri +</label>
+			<a href="#">Galeri</a>
+			<input type="checkbox" id="drop-1"/>
+			<ul>
+				<li><a class="" href="#">Fasilitas</a></li>
+				<li><a class="" href="#">Organisasi</a></li>
+				<li><a class="" href="#">Ekstrakulikuler</a></li>
+			</ul>
+		</li>
+		<li><a href="#service">Prestasi</a></li>
+		<li class="mr-sm-5">
+			<!-- First Tier Drop Down -->
+			<label for="drop-2" class="toggle">Lainnya +</label>
+			<a href="#">Lainnya</a>
+			<input type="checkbox" id="drop-2"/>
+			<ul>
+				<li><a class="" href="<?= base_url('/berita') ?>">Berita</a></li>
+				<li><a class="" href="#">Pengumuman</a></li>
+				<li><a class="" href="<?= base_url('/berkas') ?>">Unduh</a></li>
+				<li><a class="" href="#">Kontak</a></li>
+				<li><a class="" href="<?= base_url('/aboutus') ?>">Login</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
