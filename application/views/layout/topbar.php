@@ -11,7 +11,6 @@
 			<input type="checkbox" id="drop-1"/>
 			<ul>
 				<li><a class="" href="<?= base_url('/profil') ?>">Profil</a></li>
-		
 				<li><a class="" href="#">Prestasi</a></li>
 				<li><a class="" href="#">Beasiswa</a></li>
 			</ul>
@@ -24,7 +23,7 @@
 			<input type="checkbox" id="drop-1"/>
 			<ul>
 				
-				<li><a class="" href="#">Fasilitas</a></li>
+				<li><a class=""  href="<?= base_url('/fasilitas') ?>">Fasilitas</a></li>
 				<li><a class="" href="<?= base_url('/organisasi') ?>">Organisasi</a></li>
 				<li><a class="" href="<?= base_url('/ekstrakurikuler') ?>">Ekstrakulikuler</a></li>
 				<li><a class="" href="#">Testimoni</a></li>
