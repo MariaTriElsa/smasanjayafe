@@ -39,25 +39,4 @@
 </body>
 <?php $this->load->view('layout/footer');?>
 </html>
-<script>
-    $(function() {
-        let idFasilitas = 0
-        $(".btn-delete-berkas").on("click", function() {
-            idFasilitas = $(this).data("id");
-            console.log(idFasilitas);
-            $("#modal-confirm-delete").modal('show');
-        });
-        $("#btn-delete").on("click", function() {
-            //panggil url untuk hapus data
-            let inputId = $("<input>")
-                .attr("type", "hidden")
-                .attr("name", "id_berkas")
-                .val(idFasilitas);
-            let formDelete = $("#form-delete");
-            formDelete.empty().append(inputId);
-            formDelete.submit();
-            $("#modal-confirm-delete").modal('hide');
-        });
-    })
-</script>
 

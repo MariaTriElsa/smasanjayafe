@@ -3,16 +3,12 @@
 <?php $this->load->view('layout/header'); ?>
 <?php $this->load->view('layout/topbar'); ?>
 <body>
-<div id="screenshot" class="Screenshot">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="titlepage">
-					<h3>Staff</h3>
-				</div>
-			</div>
-		</div>
+<div class="mt-5">
+	<div class="judul-s">
+		Unduh Berkas
 	</div>
+</div>
+<div id="screenshot" class="Screenshot">
 	<div id="blog" class="blog">
 		<div class="container">
 			<div class="row">

@@ -13,6 +13,7 @@ class Dashboard extends CI_Controller
 	{
 		$data['fasilitas'] = $this->ModelFasilitas->getAll();
 		$data['berita'] = $this->ModelBerita->getLimit();
+		$data['faslimit'] = $this->ModelFasilitas->getLimit();
 		$this->load->view('content/dashboard/v_list_dashboard', $data);
 	}
 }

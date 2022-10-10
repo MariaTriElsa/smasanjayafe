@@ -62,7 +62,7 @@
 		nav {
 			margin:0;
 			padding: 0;
-			background-color: #da4207;
+			background-color: #254441;
 		}
 
 		#logo {
@@ -98,7 +98,7 @@
 			margin: 0px;
 			display:inline-block;
 			float: left;
-			background-color: #da4207;
+			background-color: #254441;
 			z-index: 900;
 		}
 
@@ -193,7 +193,7 @@
 			/* Stylinf the toggle lable */
 			.toggle {
 				display: block;
-				background-color: #da4207;
+				background-color: #254441;
 				padding:14px 20px;
 				color:#FFF;
 				font-size:17px;
