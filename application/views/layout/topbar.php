@@ -28,7 +28,7 @@
 				<li><a class="" href="<?= base_url('/ekstrakurikuler') ?>">Ekstrakulikuler</a></li>
 			</ul>
 		</li>
-		<li><a href="#service">Jurusan</a></li>
+		<li><a href="<?= base_url('/jurusan') ?>">Jurusan</a></li>
 		<li class="mr-sm-5">
 			<!-- First Tier Drop Down -->
 			<label for="drop-2" class="toggle">Lainnya +</label>
