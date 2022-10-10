@@ -1,8 +1,5 @@
 <nav class="sticky-top">
-	<div id="logo">
-		SMA SANJAYA
-
-	</div>
+	<div id="logo">SMA SANJAYA</div>
 
 	<label for="drop" class="toggle">Menu</label>
 	<input type="checkbox" id="drop" />
@@ -13,9 +10,8 @@
 			<a href="#">About Us</a>
 			<input type="checkbox" id="drop-1"/>
 			<ul>
-				<li><a class="" href="#">Sejarah</a></li>
-				<li><a class="" href="#">Visi</a></li>
-				<li><a class="" href="#">Misi</a></li>
+				<li><a class="" href="<?= base_url('/profil') ?>">Profil</a></li>
+		
 				<li><a class="" href="#">Prestasi</a></li>
 				<li><a class="" href="#">Beasiswa</a></li>
 			</ul>

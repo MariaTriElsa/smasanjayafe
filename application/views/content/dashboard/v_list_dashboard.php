@@ -64,7 +64,8 @@
                </div>
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <div class="blog-box">
-                     <figure><img src="images/blog-image.jpg" alt="#"/>
+				  <?php foreach ($berita as $s): ?>
+                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#"/>
                         <span>12 August 2019</span>
                      </figure>
                      <div class="travel">
@@ -74,7 +75,8 @@
                      </div>
                      <h3>London Amazing Tour</h3>
                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-                  </div>
+					 <?php endforeach; ?>
+					</div>
                </div>
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <div class="blog-box">
@@ -134,7 +136,7 @@
 																 alt="#"
 																 class="rounded img-bordered img-fluid">
 														</a>
-														<span class="rounded"><?= date("d F Y", strtotime($s->tanggal)) ?></span>
+														<span class="rounded"><?= date("d F Y", strtotime($s->tanggal))?></span>
 													</figure>
 												</div>
 												<div class="travel">
