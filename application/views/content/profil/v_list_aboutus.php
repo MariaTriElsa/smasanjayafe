@@ -13,21 +13,16 @@
         <div class="blog-full">
             <div class="blog-desc">
                 <p>
-                    <span style="font: size 22px;"> <strong>
-                        A. Sejarah 
-                    </strong></span>
+                        <div class="text-1">A. Sejarah</div>
                 </p>
                 <p>
                 <?php foreach ($aboutus as $a): ?>
-                    <span style="font-size: 18px;">
-                    <div class="text-1"> <?= $a->sejarah?></div>
+                    <div class="text-1"><?= $a->sejarah?></div>
                 </span>
                 <?php endforeach; ?>
-                </p>
+                </p><br>
                 <p>
-                    <span style="font: size 22px;"> <strong>
-                        B. Visi
-                    </strong></span>
+                <div class="text-1">B. Visi </div>
                 </p>
                 <p>
                 <?php foreach ($aboutus as $a): ?>
@@ -35,11 +30,9 @@
                     <div class="text-1"> <?= $a->visi?></div>
                 </span>
                 <?php endforeach; ?>
-                </p>
+                </p><br>
                 <p>
-                    <span style="font: size 22px;"> <strong>
-                        B. Misi
-                    </strong></span>
+                <div class="text-1">C. Misi</div>
                 </p>
                 <p>
                 <?php foreach ($aboutus as $a): ?>

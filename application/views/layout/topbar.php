@@ -23,9 +23,11 @@
 			<a href="#">Galeri</a>
 			<input type="checkbox" id="drop-1"/>
 			<ul>
+				
 				<li><a class="" href="#">Fasilitas</a></li>
 				<li><a class="" href="#">Organisasi</a></li>
 				<li><a class="" href="#">Ekstrakulikuler</a></li>
+				<li><a class="" href="#">Testimoni</a></li>
 			</ul>
 		</li>
 		<li><a href="#service">Jurusan</a></li>
