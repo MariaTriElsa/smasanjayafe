@@ -1,5 +1,5 @@
 <nav class="sticky-top">
-	<div id="logo">SMA SANJAYA</div>
+	<img class="ml-4 pl-2 pt-1 pb-1 pr-1" src="http://localhost/smasanjaya/upload/logo.png" width="40">
 
 	<label for="drop" class="toggle">Menu</label>
 	<input type="checkbox" id="drop" />

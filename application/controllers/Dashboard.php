@@ -7,10 +7,12 @@ class Dashboard extends CI_Controller
 		parent::__construct();
 		$this->load->model("ModelFasilitas");
 		$this->load->model("ModelBerita");
+		$this->load->model("ModelAboutUs");
 	}
 
 	public function index()
 	{
+		$data['aboutus'] = $this->ModelAboutUs->getLimit();
 		$data['fasilitas'] = $this->ModelFasilitas->getAll();
 		$data['berita'] = $this->ModelBerita->getLimit();
 		$data['faslimit'] = $this->ModelFasilitas->getLimit();
