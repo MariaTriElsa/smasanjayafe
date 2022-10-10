@@ -14,8 +14,6 @@ class Beasiswa extends CI_Controller
 		$data = array(
 			"beasiswa" => $dataBeasiswa
 		);
-		$this->load->view('header');
 		$this->load->view('content/beasiswa/v_list_beasiswa', $data);
-		$this->load->view('footer');
 	}
 }

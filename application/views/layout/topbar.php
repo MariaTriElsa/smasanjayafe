@@ -12,7 +12,7 @@
 			<ul>
 				<li><a class="" href="<?= base_url('/profil') ?>">Profil</a></li>
 				<li><a class="" href="#">Prestasi</a></li>
-				<li><a class="" href="#">Beasiswa</a></li>
+				<li><a class="" href="<?= base_url('/beasiswa')?>">Beasiswa</a></li>
 			</ul>
 		</li>
 		<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
@@ -26,7 +26,7 @@
 				<li><a class=""  href="<?= base_url('/fasilitas') ?>">Fasilitas</a></li>
 				<li><a class="" href="<?= base_url('/organisasi') ?>">Organisasi</a></li>
 				<li><a class="" href="<?= base_url('/ekstrakurikuler') ?>">Ekstrakulikuler</a></li>
-				<li><a class="" href="#">Testimoni</a></li>
+				<li><a class="" href="<?= base_url('/testimoni') ?>">Testimoni</a></li>
 			</ul>
 		</li>
 		<li><a href="<?= base_url('/jurusan') ?>">Jurusan</a></li>

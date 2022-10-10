@@ -37,8 +37,7 @@
 		</a>
 	</div>
 </section>
-<<<<<<< HEAD
-=======
+
 <div id="blog" class="blog">
          <div class="container">
             <div class="row">
@@ -111,7 +110,6 @@
             </div>
          </div>
       </div>
->>>>>>> 12392a536f44cae45cf98fc6cd9318e89ee31c9a
 <div class="mt-5">
 	<div class="judul-s">
 		Berita Terbaru

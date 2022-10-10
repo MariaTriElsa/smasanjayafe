@@ -41,9 +41,7 @@
                 </span>
                 <?php endforeach; ?>
                 </p>
-               
             </div>
-
         </div>
     </div>
 </div>
