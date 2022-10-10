@@ -5,17 +5,11 @@
 <?php $this->load->view('layout/topbar'); ?>
 <div class="mt-5">
 	<div class="judul-s">
-		Beasiswa
+		Beasiswa 
 	</div>
 </div>
+<br>
 <div class="container">
-    <div class="blog-deatails">
-        <div class="blog-full">
-            <div class="blog-desc">
-
-        </div>
-</div>
-    </div>
 <div id="screenshot" class="Screenshot">
 <div class="content">
     <div class="card">
@@ -24,9 +18,9 @@
                     $no = 1;
                     foreach ($beasiswa as $b) {
                     ?>
-                            <div class="text-1"> <?= $b->nama?></div>
+                            <div class="text-1"> <b><?= $b->nama?></b></div>
 							<br>
-                            <div class="text-1"> <?= $b->deskripsi?></div>
+                            <div class="text"> <?= $b->deskripsi?></div>
 						<hr>
 						<br>
                     <?php
@@ -36,6 +30,8 @@
 	<div class="card-footer">
 	</div>
     </div>
+</div>
+</div>
 </div>
 </body>
 <?php $this->load->view('layout/footer');?>
