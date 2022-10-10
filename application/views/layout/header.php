@@ -280,5 +280,38 @@
 			}
 
 		}
+		.judul {
+			text-align: center;
+			font-size: 40px;
+			font-weight: normal;
+			color: #050303;
+			line-height: 46px;
+			border-bottom: #fc4311 solid 1px;
+			width: 242px;
+			margin: 0 auto;
+		}
+		.judul-s {
+			text-align: center;
+			font-size: 30px;
+			font-weight: normal;
+			color: #050303;
+			line-height: 46px;
+			border-bottom: #fc4311 solid 1px;
+			width: 242px;
+			margin: 0 auto;
+		}
+		.text-1 {
+			text-align: justify;
+			font-size: 18px;
+			font-weight: normal;
+			color: #050303;
+		}
+		.text-limit{
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
 	</style>
 </head>

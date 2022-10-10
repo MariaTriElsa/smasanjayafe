@@ -3,16 +3,12 @@
 <?php $this->load->view('layout/header'); ?>
 <body>
 <?php $this->load->view('layout/topbar'); ?>
-<div id="screenshot" class="Screenshot">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="titlepage">
-					<h3>Unduh Berkas</h3>
-				</div>
-			</div>
-		</div>
+<div class="mt-5">
+	<div class="judul-s">
+		Unduh Berkas
 	</div>
+</div>
+<div id="screenshot" class="Screenshot">
 <div class="content">
     <div class="card">
         <div class="card-body">
@@ -20,7 +16,7 @@
                     $no = 1;
                     foreach ($berkas as $b) {
                     ?>
-                            <?= $b->nama_berkas?>
+                            <div class="text-1"> <?= $b->nama_berkas?></div>
 							<br>
 								<a class="btn btn-sm btn-primary text-white"
 								   href="<?= 'http://localhost/smasanjaya/upload/' . $b->file_berkas ?>" download="<?= $b->nama_berkas ?>">

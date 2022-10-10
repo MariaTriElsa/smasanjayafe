@@ -1343,18 +1343,15 @@ z-index: 999;
 /** download section **/
 
 .Screenshot {
-	padding-top: 90px;
-	padding-bottom: 90px;
 	background: #fff;
 }
 
 .Screenshot .titlepage {
-	padding-bottom: 60px;
 	text-align: center;
 }
 
 .Screenshot .titlepage span {
-	color: # 3d3c3c
+	color: #3d3c3c
 }
 
 .Screenshot .titlepage h2 {

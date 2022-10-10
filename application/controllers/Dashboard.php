@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller
 	public function index()
 	{
 		$data['fasilitas'] = $this->ModelFasilitas->getAll();
-		$data['berita'] = $this->ModelBerita->getAll();
+		$data['berita'] = $this->ModelBerita->getLimit();
 		$this->load->view('content/dashboard/v_list_dashboard', $data);
 	}
 }

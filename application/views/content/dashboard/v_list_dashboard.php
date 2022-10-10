@@ -36,58 +36,49 @@
 		</a>
 	</div>
 </section>
+<div class="mt-5">
+	<div class="judul-s">
+		Berita Terbaru
+	</div>
+</div>
 <div class="container-fluid">
 	<div class="col-12">
-		<div id="screenshot" class="Screenshot">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="titlepage">
-							<h3>Berita</h3>
+		<div class="row">
+			<div id="screenshot" class="Screenshot">
+				<div id="blog" class="blog">
+					<div class="container">
+						<div class="row">
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
+						<div class="row">
+							<?php foreach ($berita as $s): ?>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 									<div class="card">
-										<div class="card-header">
-										</div>
 										<div class="card-body">
-											<img class="first-slide" src="assets/images/bannerfirst.png"><br>
-
+											<div class="blog-box">
+												<div style="text-align: center;">
+													<figure>
+														<a href="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"
+														   download="fff">
+															<img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"
+																 alt="#"
+																 class="rounded img-bordered img-fluid">
+														</a>
+														<span class="rounded"><?= date("d F Y", strtotime($s->tanggal)) ?></span>
+													</figure>
+												</div>
+												<div class="travel">
+													<div class="text-center"><h2><?= $s->nama_berita ?></h2></div>
+													<hr>
+													<div class="text-justify text-limit"><?= $s->deskripsi_berita ?></div>
+												</div>
+											</div>
 										</div>
 									</div>
+									<br>
 								</div>
-								<?php
-								$no = 1;
-								foreach ($berita as $b) {
-									?>
-									<div class="carousel-item">
-										<div class="card">
-											<div class="card-header">
-												<?= $b->nama_berita ?>
-											</div>
-											<div class="card-body">
-												<img class="second-slide"
-													 src="<?= 'http://localhost/smasanjaya/upload/' . $b->gambar_berita ?>"
-												><br>
-												<div class="text-left"><?= $b->deskripsi_berita ?></div>
-											</div>
-										</div>
-									</div>
-									<?php
-								}
-								?>
-							</div>
-							<a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i
-										class='fa fa-angle-left'></i></a>
-							<a class="carousel-control-next"
-							   href="#main_slider"
-							   role="button" data-slide="next"> <i
-										class='fa fa-angle-right'></i></a>
+
+							<?php endforeach; ?>
+
 						</div>
 					</div>
 				</div>
