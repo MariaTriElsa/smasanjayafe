@@ -11,7 +11,7 @@
 			<input type="checkbox" id="drop-1"/>
 			<ul>
 				<li><a class="" href="<?= base_url('/profil') ?>">Profil</a></li>
-				<li><a class="" href="#">Prestasi</a></li>
+				<li><a class="" href="<?= base_url('/prestasi') ?>">Prestasi</a></li>
 				<li><a class="" href="<?= base_url('/beasiswa')?>">Beasiswa</a></li>
 			</ul>
 		</li>

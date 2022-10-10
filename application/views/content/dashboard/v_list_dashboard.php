@@ -11,8 +11,7 @@
 				<img class="first-slide" src="<?= base_url('upload/main.jpg') ?>" alt="First slide">
 				<div class="container">
 					<div class="carousel-caption relative">
-						
-						<h1>SMA Sanjaya XIV Nanggulan(LOGO)</h1>
+						<h1>SMA Sanjaya XIV Nanggulan</h1>
 					</div>
 				</div>
 			</div>
@@ -22,8 +21,8 @@
 				?>
 				<div class="carousel-item">
 					<img class="second-slide"
-						 src="http://localhost/smasanjaya/upload/<?php echo $f->gambar_fasilitas ?>"
-						 alt="Second slide">
+						 src="http://localhost/smasanjaya/upload/<?php echo $f->gambar_fasilitas?>"
+						 alt="Second slide" >
 				</div>
 				<?php
 			}
