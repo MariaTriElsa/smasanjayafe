@@ -22,8 +22,8 @@
 								   href="<?= 'http://localhost/smasanjaya/upload/' . $b->file_berkas ?>" download="<?= $b->nama_berkas ?>">
 									<i class="fa fa-download"></i>
 								</a>
-						<a href="<?= 'http://localhost/smasanjaya/upload/' . $b->file_berkas ?>" download="<?= $b->nama_berkas ?>">
-							Download</i>
+						<a class="text-dark" href="<?= 'http://localhost/smasanjaya/upload/' . $b->file_berkas ?>" download="<?= $b->nama_berkas ?>">
+							Download
 						</a>
 						<hr>
 						<br>

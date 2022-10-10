@@ -6,10 +6,6 @@ class Ekstrakurikuler extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("ModelEkstrakurikuler");
-		$this->check_login();
-		if ($this->session->userdata('id_role') != "1") {
-			redirect('', 'refresh');
-		}
 	}
 
 	public function index()
@@ -17,10 +13,8 @@ class Ekstrakurikuler extends CI_Controller
         $dataEkstrakurikuler = $this->ModelEkstrakurikuler->getAll();
         $data = array(
             "ekstrakurikuler" => $dataEkstrakurikuler
-        ); 
-        $this->load->view('header');
+        );
         $this->load->view('content/ekstrakurikuler/v_list_ekstrakurikuler', $data);
-        $this->load->view('footer');
     }
 
     // untuk me-load tampilan form tambah barang

@@ -13,10 +13,8 @@ class Organisasi extends CI_Controller
         $dataOrganisasi = $this->ModelOrganisasi->getAll();
         $data = array(
             "organisasi" => $dataOrganisasi
-        ); 
-        $this->load->view('header');
+        );
         $this->load->view('content/organisasi/v_list_organisasi', $data);
-        $this->load->view('footer');
     }
 
     // untuk me-load tampilan form tambah barang
