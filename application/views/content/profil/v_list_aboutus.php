@@ -40,7 +40,7 @@
                     <div class="text"> <?= $a->misi?></div>
                 </span>
                 <?php endforeach; ?>
-                </p>
+                </p> <br>
             </div>
         </div>
     </div>
