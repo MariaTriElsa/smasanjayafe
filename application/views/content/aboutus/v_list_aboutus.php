@@ -75,11 +75,7 @@
                             <td><?= $a->misi ?></td>
                             <td><?= $a->sejarah ?></td>
                             <td><?= $a->alamat ?></td>
-<<<<<<< HEAD
-							<td><?= $a->kontak ?></td>
-=======
                             <td><?= $a->kontak ?></td>
->>>>>>> a59bcc48bf5041e8af9e95e56623082d3ba38014
                             <td>
                                 <a href="<?= site_url("aboutus/ubah/$a->id") ?>" class="btn btn-warning btn-sm">
                                     <i class="fa fa-pencil"></i>

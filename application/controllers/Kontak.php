@@ -1,6 +1,6 @@
 <?php
 
-class AboutUs extends CI_Controller
+class Kontak extends CI_Controller
 {
 	function __construct()
 	{
@@ -10,9 +10,9 @@ class AboutUs extends CI_Controller
 
 	public function index()
 	{
-		$dataAboutUs = $this->ModelAboutUs->getAll();
+		$dataKontak = $this->ModelAboutUs->getLimit();
 		$data = array(
-			"kontak" => $dataAboutUs
+			"kontak" => $dataKontak
 		);
 		$this->load->view('content/kontak/v_list_kontak', $data);
 	}
