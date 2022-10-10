@@ -8,7 +8,7 @@
 	<div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="first-slide" src="<?= base_url('assets/images/bannerfirst.png') ?>" alt="First slide">
+				<img class="first-slide" src="<?= base_url('upload/main.jpg') ?>" alt="First slide">
 				<div class="container">
 					<div class="carousel-caption relative">
 						
