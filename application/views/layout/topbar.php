@@ -18,9 +18,9 @@
 		<li><a href="<?= base_url('/staff') ?>">Staff</a></li>
 		<li>
 			<!-- First Tier Drop Down -->
-			<label for="drop-1" class="toggle">Galeri +</label>
+			<label for="drop-2" class="toggle">Galeri +</label>
 			<a href="#">Galeri</a>
-			<input type="checkbox" id="drop-1"/>
+			<input type="checkbox" id="drop-2"/>
 			<ul>
 				
 				<li><a class=""  href="<?= base_url('/fasilitas') ?>">Fasilitas</a></li>
@@ -32,9 +32,9 @@
 		<li><a href="<?= base_url('/jurusan') ?>">Jurusan</a></li>
 		<li class="mr-sm-5">
 			<!-- First Tier Drop Down -->
-			<label for="drop-2" class="toggle">Lainnya +</label>
+			<label for="drop-3" class="toggle">Lainnya +</label>
 			<a href="#">Lainnya</a>
-			<input type="checkbox" id="drop-2"/>
+			<input type="checkbox" id="drop-3"/>
 			<ul>
 				<li><a class="" href="<?= base_url('') ?>">Info PSB</a></li>
 				<li><a class="" href="<?= base_url('/berita') ?>">Berita</a></li>
