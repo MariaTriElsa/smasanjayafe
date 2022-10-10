@@ -11,6 +11,7 @@
 				<img class="first-slide" src="<?= base_url('assets/images/bannerfirst.png') ?>" alt="First slide">
 				<div class="container">
 					<div class="carousel-caption relative">
+						
 						<h1>SMA Sanjaya XIV Nanggulan(LOGO)</h1>
 					</div>
 				</div>
@@ -36,6 +37,76 @@
 		</a>
 	</div>
 </section>
+<div id="blog" class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Berita Terbaru</h2>
+                     <!-- <span>Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+				  <?php foreach ($berita as $s): ?>
+                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#">
+                        <span  class="rounded"><?= date("d F Y", strtotime($s->tanggal)) ?></span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Admin</span> 
+                     </div>
+                     <h2><?= $s->nama_berita ?></h2>
+                     <p class="text-justify"><?= $s->deskripsi_berita ?></p>
+                  </div>
+				  <?php endforeach; ?>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/blog-image.jpg" alt="#"/>
+                        <span>12 August 2019</span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Travel  Agency</span> 
+                        <p><strong class="Comment"> 06 </strong>  Comment</p>
+                        <p><strong class="like">05 </strong>Like</p>
+                     </div>
+                     <h3>London Amazing Tour</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/blog-image.jpg" alt="#"/>
+                        <span>14 August 2019</span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Travel  Agency</span> 
+                        <p><strong class="Comment"> 06 </strong>  Comment</p>
+                        <p><strong class="like">05 </strong>Like</p>
+                     </div>
+                     <h3>London Amazing Tour</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/blog-image0.jpg" alt="#"/>
+                        <span>15 August 2019</span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Travel  Agency</span> 
+                        <p><strong class="Comment"> 06 </strong>  Comment</p>
+                        <p><strong class="like">05 </strong>Like</p>
+                     </div>
+                     <h3>London Amazing Tour</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 <div class="mt-5">
 	<div class="judul-s">
 		Berita Terbaru
