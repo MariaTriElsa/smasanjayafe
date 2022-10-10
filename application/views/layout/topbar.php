@@ -25,8 +25,8 @@
 			<ul>
 				
 				<li><a class="" href="#">Fasilitas</a></li>
-				<li><a class="" href="#">Organisasi</a></li>
-				<li><a class="" href="#">Ekstrakulikuler</a></li>
+				<li><a class="" href="<?= base_url('/organisasi') ?>">Organisasi</a></li>
+				<li><a class="" href="<?= base_url('/ekstrakurikuler') ?>">Ekstrakulikuler</a></li>
 				<li><a class="" href="#">Testimoni</a></li>
 			</ul>
 		</li>
@@ -37,11 +37,11 @@
 			<a href="#">Lainnya</a>
 			<input type="checkbox" id="drop-2"/>
 			<ul>
+				<li><a class="" href="<?= base_url('') ?>">Info PSB</a></li>
 				<li><a class="" href="<?= base_url('/berita') ?>">Berita</a></li>
-				<li><a class="" href="#">Pengumuman</a></li>
+				<li><a class="" href="<?= base_url('/pengumuman') ?>">Pengumuman</a></li>
 				<li><a class="" href="<?= base_url('/berkas') ?>">Unduh</a></li>
-				<li><a class="" href="#">Kontak</a></li>
-				<li><a class="" href="<?= base_url('/aboutus') ?>">Login</a></li>
+				<li><a class="" href="<?= base_url('/kontak') ?>">Kontak</a></li>
 			</ul>
 		</li>
 	</ul>

@@ -6,10 +6,6 @@ class Pengumuman extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("ModelPengumuman");
-		$this->check_login();
-		if ($this->session->userdata('id_role') != "1") {
-			redirect('', 'refresh');
-		}
 	}
 
 	public function index()
@@ -17,10 +13,8 @@ class Pengumuman extends CI_Controller
         $dataPengumuman = $this->ModelPengumuman->getAll();
         $data = array(
             "pengumuman" => $dataPengumuman
-        ); 
-        $this->load->view('header');
+        );
         $this->load->view('content/pengumuman/v_list_pengumuman', $data);
-        $this->load->view('footer');
     }
 
     // untuk me-load tampilan form tambah barang

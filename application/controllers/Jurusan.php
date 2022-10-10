@@ -6,10 +6,6 @@ class Jurusan extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("ModelJurusan");
-		$this->check_login();
-		if ($this->session->userdata('id_role') != "1") {
-			redirect('', 'refresh');
-		}
 	}
 
 	public function index()
@@ -17,10 +13,8 @@ class Jurusan extends CI_Controller
         $dataJurusan = $this->ModelJurusan->getAll();
         $data = array(
             "jurusan" => $dataJurusan
-        ); 
-        $this->load->view('header');
+        );
         $this->load->view('content/jurusan/v_list_jurusan', $data);
-        $this->load->view('footer');
     }
 
     // untuk me-load tampilan form tambah barang
