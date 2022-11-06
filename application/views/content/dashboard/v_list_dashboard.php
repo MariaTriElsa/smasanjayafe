@@ -36,6 +36,24 @@
 		</a>
 	</div>
 </section>
+<div id="blog" class="blog">
+			<div class="row">
+                <div class="col-lg-8 col-md-8 mb-30">
+                <div class="degree-wrap">
+                    <img src="upload/ips.jpg" alt="">
+                    <div class="title-part">
+                        <h4 class="title">Jurusan Ilmu Pengetahuan Sosial</h4>
+                    </div>
+                    <div class="content-part">
+                        <p class="desc">Jurusan ilmu pengetahuan sosial SMA Sanjaya XIV Nanggulan adalah jurusan yang mempelajari tentang hubungan antar manusia dan hubungan manusia dengan lingkungannya, serta berbagai aspek sosial. </p>
+                        <div class="btn-part">
+                            <a href="https://www.smksanjaya.sch.id/p/jurusan-akomodasi-perhotelan">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
 <div id="blog" class="blog">
          <div class="container">
@@ -43,86 +61,10 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Berita Terbaru</h2>
-                     <!-- <span>Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
                   </div>
                </div>
             </div>
-            <div class="row">
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-				  <?php foreach ($berita as $s): ?>
-                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#">
-                        <span  class="rounded"><?= date("d F Y", strtotime($s->tanggal)) ?></span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Admin</span> 
-                     </div>
-                     <h2><?= $s->nama_berita ?></h2>
-                     <p class="text-justify"><?= $s->deskripsi_berita ?></p>
-                  </div>
-				  <?php endforeach; ?>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-				  <?php foreach ($berita as $s): ?>
-                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#"/>
-                        <span>12 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-					 <?php endforeach; ?>
-					</div>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-                     <figure><img src="images/blog-image.jpg" alt="#"/>
-                        <span>14 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-                     <figure><img src="images/blog-image0.jpg" alt="#"/>
-                        <span>15 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-<div class="mt-5">
-	<div class="judul-s">
-		Berita Terbaru
-	</div>
-</div>
-<div class="container-fluid">
-	<div class="col-12">
-		<div class="row">
-			<div id="screenshot" class="Screenshot">
-				<div id="blog" class="blog">
-					<div class="container">
-						<div class="row">
-						</div>
-						<div class="row">
+			<div class="row">
 							<?php foreach ($berita as $s): ?>
 								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 									<div class="card">
@@ -149,16 +91,16 @@
 									</div>
 									<br>
 								</div>
-
 							<?php endforeach; ?>
-
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		 </div>
+         </div>
+      </div>
 </div>
+
+
+	  
+
 
 </body>
 <?php $this->load->view('layout/footer'); ?>
