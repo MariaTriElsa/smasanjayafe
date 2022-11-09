@@ -11,7 +11,7 @@
 				<img class="first-slide" src="<?= base_url('upload/main.jpg') ?>" alt="First slide">
 				<div class="container">
 					<div class="carousel-caption relative">
-						<h1>SMA Sanjaya XIV Nanggulan</h1>
+						
 					</div>
 				</div>
 			</div>
@@ -35,31 +35,43 @@
 			<i class='fa fa-angle-right'></i>
 		</a>
 	</div>
-</section>
-<div class="mt-5">
-	<div class="judul-s">
-		Testimoni
+
+	<div class="mt-5">
+	<div class="judul">
+		Jurusan
 	</div>
 </div>
-<section class="testimonials">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<div id="customers-testimonials" class="owl-carousel">
-					<?php foreach ($testimoni as $t): ?>
-						<div class="item">
-							<div class="shadow-effect">
-								<img class="img-circle" src="<?= 'http://localhost/smasanjaya/upload/' . $t->gambar ?>" alt="">
-								<p><?= $t->testimoni ?></p>
-							</div>
-							<div class="testimonial-name"><?= $t->nama ?></div>
+<div id="screenshot" class="Screenshot">
+	<div id="blog" class="blog">
+		<div class="container">
+			<div class="row">
+			</div>
+			<div class="row">
+				<?php foreach ($jurusan as $j): ?>
+
+					<div class="col-12">
+					<div class="card text-center">
+						<div class="card-header">
+						<h2> <b> <?= $j->nama_jurusan ?></b></h2>
 						</div>
-					<?php endforeach; ?>
-				</div>
+						<div class="card-body">
+							<img src="upload/ips.png" alt="">
+							<h5 class="card-title"><?= $j->deskripsi_jurusan ?></h5>
+							Keunggulan:
+							<br>
+							<p class="card-text"><?= $j->keunggulan_jurusan ?></p>
+							
+						</div>
+						<div class="card-footer text-muted">
+						<a href="<?= base_url('/jurusan') ?>" class="btn btn-primary">Selengkapnya</a>
+						</div>
+						</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
-</section>
+</div>
+
 <div class="mt-5">
 	<div class="judul-s">
 		Berita Terbaru
@@ -108,38 +120,31 @@
 		</div>
 	</div>
 </div>
+</section>
 <div class="mt-5">
-	<div class="judul">
-		Jurusan
+	<div class="judul-s">
+		Testimoni
 	</div>
 </div>
-<div id="screenshot" class="Screenshot">
-	<div id="blog" class="blog">
-		<div class="container">
-			<div class="row">
-			</div>
-			<div class="row">
-				<?php foreach ($jurusan as $j): ?>
-					<div class="col-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="text-1"><?= $j->nama_jurusan ?></div>
-								<hr>
-								<div><?= $j->deskripsi_jurusan ?></div>
-								<hr>
-								Keunggulan:
-								<div><?= $j->keunggulan_jurusan ?></div>
+<section class="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="customers-testimonials" class="owl-carousel">
+					<?php foreach ($testimoni as $t): ?>
+						<div class="item">
+							<div class="shadow-effect">
+								<img class="img-circle" src="<?= 'http://localhost/smasanjaya/upload/' . $t->gambar ?>" alt="">
+								<p><?= $t->testimoni ?></p>
 							</div>
+							<div class="testimonial-name"><?= $t->nama ?></div>
 						</div>
-						<br>
-					</div>
-
-				<?php endforeach; ?>
-
+					<?php endforeach; ?>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 </body>
 <?php $this->load->view('layout/footer'); ?>
