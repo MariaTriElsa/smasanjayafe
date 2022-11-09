@@ -74,15 +74,22 @@
 					<li><a class="" href="<?= base_url('/testimoni') ?>">Testimoni</a></li>
 				</ul>
 			</div>
+			<div class="col-xs-6 col-md-3">
+				<h6>Akademik</h6>
+				<ul class="footer-links">
+					<li><a class=""  href="<?= base_url('/jurusan') ?>">Jurusan</a></li>
+					<li><a class=""  href="<?= base_url('/guru') ?>">Guru</a></li>
+					<li><a class=""  href="<?= base_url('/berita') ?>">Berita</a></li>
+					<li><a class=""  href="<?= base_url('/pengumuman') ?>">Pengumuman</a></li>
+				</ul>
+			</div>
 
 			<div class="col-xs-6 col-md-3">
-				<h6>Quick Links</h6>
+				<h6>Hubungi Kami</h6>
 				<ul class="footer-links">
-					<li><a href="http://scanfcode.com/about/">About Us</a></li>
-					<li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-					<li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-					<li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-					<li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+					<li><i class="fa fa-map-marker" aria-hidden="true"> Karang RT 29 RW 11. Jatisarono <br> Kec.Nanguulan, Kab.Kulon Progo, Daerah Istimewa Yogyakarta</i></li>
+					<li><i class="fa fa-phone" aria-hidden="true"> 0853566722</i></li>
+					<li><i class="fa fa-envelope" aria-hidden="true"> Smasanjaya@gmail.com</i></li>
 				</ul>
 			</div>
 		</div>
@@ -91,7 +98,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-sm-6 col-xs-12">
-				<p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+				<p class="copyright-text">&copy; 2022 SMA Sanjaya XIV Nanggulan All Rights Reserved.
+					<br> Developed By KELOMPOK PPL 23
 					<a href="https://ukrim.ac.id/">UKRIM University</a>.
 				</p>
 			</div>

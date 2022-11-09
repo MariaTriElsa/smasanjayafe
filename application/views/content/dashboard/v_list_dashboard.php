@@ -4,8 +4,6 @@
 
 <body>
 <?php $this->load->view('layout/topbar'); ?>
-
-
 <section class="slider_section>">
 	<div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
 		<div class="carousel-inner">
@@ -102,9 +100,7 @@
 									</div>
 									<br>
 								</div>
-
 							<?php endforeach; ?>
-
 						</div>
 					</div>
 				</div>
