@@ -4,6 +4,8 @@
 
 <body>
 <?php $this->load->view('layout/topbar'); ?>
+
+
 <section class="slider_section>">
 	<div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
 		<div class="carousel-inner">
@@ -36,79 +38,30 @@
 		</a>
 	</div>
 </section>
-
-<div id="blog" class="blog">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Berita Terbaru</h2>
-                     <!-- <span>Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-				  <?php foreach ($berita as $s): ?>
-                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#">
-                        <span  class="rounded"><?= date("d F Y", strtotime($s->tanggal)) ?></span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Admin</span> 
-                     </div>
-                     <h2><?= $s->nama_berita ?></h2>
-                     <p class="text-justify"><?= $s->deskripsi_berita ?></p>
-                  </div>
-				  <?php endforeach; ?>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-				  <?php foreach ($berita as $s): ?>
-                     <figure><img src="<?= 'http://localhost/smasanjaya/upload/' . $s->gambar_berita ?>"alt="#"/>
-                        <span>12 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-					 <?php endforeach; ?>
-					</div>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-                     <figure><img src="images/blog-image.jpg" alt="#"/>
-                        <span>14 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="blog-box">
-                     <figure><img src="images/blog-image0.jpg" alt="#"/>
-                        <span>15 August 2019</span>
-                     </figure>
-                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span> 
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
-                     </div>
-                     <h3>London Amazing Tour</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+<div class="mt-5">
+	<div class="judul-s">
+		Testimoni
+	</div>
+</div>
+<section class="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="customers-testimonials" class="owl-carousel">
+					<?php foreach ($testimoni as $t): ?>
+						<div class="item">
+							<div class="shadow-effect">
+								<img class="img-circle" src="<?= 'http://localhost/smasanjaya/upload/' . $t->gambar ?>" alt="">
+								<p><?= $t->testimoni ?></p>
+							</div>
+							<div class="testimonial-name"><?= $t->nama ?></div>
+						</div>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <div class="mt-5">
 	<div class="judul-s">
 		Berita Terbaru
@@ -155,6 +108,38 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mt-5">
+	<div class="judul">
+		Jurusan
+	</div>
+</div>
+<div id="screenshot" class="Screenshot">
+	<div id="blog" class="blog">
+		<div class="container">
+			<div class="row">
+			</div>
+			<div class="row">
+				<?php foreach ($jurusan as $j): ?>
+					<div class="col-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-1"><?= $j->nama_jurusan ?></div>
+								<hr>
+								<div><?= $j->deskripsi_jurusan ?></div>
+								<hr>
+								Keunggulan:
+								<div><?= $j->keunggulan_jurusan ?></div>
+							</div>
+						</div>
+						<br>
+					</div>
+
+				<?php endforeach; ?>
+
 			</div>
 		</div>
 	</div>

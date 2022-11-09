@@ -10,8 +10,8 @@
 			<a href="#">About Us</a>
 			<input type="checkbox" id="drop-1"/>
 			<ul>
-				<li><a class="" href="<?= base_url('/profil') ?>">Profil</a></li>
-				<li><a class="" href="<?= base_url('/prestasi') ?>">Prestasi</a></li>
+				<li><a class="" href="<?= base_url('/profil')?>">Profil</a></li>
+				<li><a class="" href="<?= base_url('/prestasi')?>">Prestasi</a></li>
 				<li><a class="" href="<?= base_url('/beasiswa')?>">Beasiswa</a></li>
 			</ul>
 		</li>
@@ -22,7 +22,6 @@
 			<a href="#">Galeri</a>
 			<input type="checkbox" id="drop-2"/>
 			<ul>
-				
 				<li><a class=""  href="<?= base_url('/fasilitas') ?>">Fasilitas</a></li>
 				<li><a class="" href="<?= base_url('/organisasi') ?>">Organisasi</a></li>
 				<li><a class="" href="<?= base_url('/ekstrakurikuler') ?>">Ekstrakulikuler</a></li>

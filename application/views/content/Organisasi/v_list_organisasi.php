@@ -5,7 +5,7 @@
 <body>
 <div class="mt-5">
 	<div class="judul">
-		Jurusan
+		Organisasi
 	</div>
 </div>
 <div id="screenshot" class="Screenshot">
@@ -48,25 +48,4 @@
 </body>
 
 </html>
-<script>
-	$(function () {
-		let idStaff = 0
-		$(".btn-delete-staff").on("click", function () {
-			idStaff = $(this).data("id");
-			console.log(idStaff);
-			$("#modal-confirm-delete").modal('show');
-		});
-		$("#btn-delete").on("click", function () {
-			//panggil url untuk hapus data
-			let inputId = $("<input>")
-				.attr("type", "hidden")
-				.attr("name", "id_staff")
-				.val(idStaff);
-			let formDelete = $("#form-delete");
-			formDelete.empty().append(inputId);
-			formDelete.submit();
-			$("#modal-confirm-delete").modal('hide');
-		});
-	})
-</script>
 <?php $this->load->view('layout/footer'); ?>

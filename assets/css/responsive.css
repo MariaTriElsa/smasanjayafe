@@ -198,7 +198,7 @@
     }
     .relative {
         position: absolute;
-        top: 42%;
+        top: 30%;
         transform: translateY(-50%);
         padding: 0;
         border: 0 aliceblue;

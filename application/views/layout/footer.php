@@ -7,6 +7,37 @@
 	<script src="<?= base_url('assets/js/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
 	<script src="<?= base_url('assets/js/plugin.js') ?>"></script>
 	<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+	<!--	testi-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			"use strict";
+			//  TESTIMONIALS CAROUSEL HOOK
+			$('#customers-testimonials').owlCarousel({
+				loop: true,
+				center: true,
+				items: 3,
+				margin: 0,
+				autoplay: true,
+				dots:true,
+				autoplayTimeout: 8500,
+				smartSpeed: 450,
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 2
+					},
+					1170: {
+						items: 3
+					}
+				}
+			});
+		});
+	</script>
+
 	<script>
 		$(document).ready(function () {
 			$(".fancybox").fancybox({
@@ -61,7 +92,7 @@
 		<div class="row">
 			<div class="col-md-8 col-sm-6 col-xs-12">
 				<p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-					<a href="https://ukrim.ac.id/">SMA SANJAYA</a>.
+					<a href="https://ukrim.ac.id/">UKRIM University</a>.
 				</p>
 			</div>
 
