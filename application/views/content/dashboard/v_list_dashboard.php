@@ -48,7 +48,6 @@
 			</div>
 			<div class="row">
 				<?php foreach ($jurusan as $j): ?>
-
 					<div class="col-12">
 					<div class="card text-center">
 						<div class="card-header">
@@ -60,7 +59,6 @@
 							Keunggulan:
 							<br>
 							<p class="card-text"><?= $j->keunggulan_jurusan ?></p>
-							
 						</div>
 						<div class="card-footer text-muted">
 						<a href="<?= base_url('/jurusan') ?>" class="btn btn-primary">Selengkapnya</a>

@@ -35,11 +35,11 @@
 			<a href="#">Lainnya</a>
 			<input type="checkbox" id="drop-3"/>
 			<ul>
-				<li><a class="" href="<?= base_url('') ?>">Info PSB</a></li>
+				<li><a class="" href="<?= base_url('/psb') ?>">Info PSB</a></li>
 				<li><a class="" href="<?= base_url('/berita') ?>">Berita</a></li>
 				<li><a class="" href="<?= base_url('/pengumuman') ?>">Pengumuman</a></li>
 				<li><a class="" href="<?= base_url('/berkas') ?>">Unduh</a></li>
-				<li><a class="" href="<?= base_url('/kontak') ?>">Kontak</a></li>
+				<!-- <li><a class="" href="<?= base_url('/kontak') ?>">Kontak</a></li> -->
 			</ul>
 		</li>
 	</ul>
