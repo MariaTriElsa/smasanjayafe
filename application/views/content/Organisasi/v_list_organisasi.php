@@ -4,7 +4,7 @@
 <?php $this->load->view('layout/topbar'); ?>
 <body>
 <div class="mt-5">
-	<div class="judul">
+	<div class="judul-s">
 		Organisasi
 	</div>
 </div>

@@ -78,7 +78,7 @@
 				<h6>Akademik</h6>
 				<ul class="footer-links">
 					<li><a class=""  href="<?= base_url('/jurusan') ?>">Jurusan</a></li>
-					<li><a class=""  href="<?= base_url('/guru') ?>">Guru</a></li>
+					<li><a class=""  href="<?= base_url('/staff') ?>">Staff</a></li>
 					<li><a class=""  href="<?= base_url('/berita') ?>">Berita</a></li>
 					<li><a class=""  href="<?= base_url('/pengumuman') ?>">Pengumuman</a></li>
 				</ul>

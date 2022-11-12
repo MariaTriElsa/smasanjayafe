@@ -18,7 +18,7 @@ class Dashboard extends CI_Controller
 		$data['fasilitas'] = $this->ModelFasilitas->getAll();
 		$data['berita'] = $this->ModelBerita->getLimit();
 		$data['faslimit'] = $this->ModelFasilitas->getLimit();
-		$data['jurusan'] = $this->ModelJurusan->getAll();
+		$data['jurusan'] = $this->ModelJurusan->getLimit();
 		$data['testimoni'] = $this->ModelTestimoni->getAll();
 		$this->load->view('content/dashboard/v_list_dashboard', $data);
 	}

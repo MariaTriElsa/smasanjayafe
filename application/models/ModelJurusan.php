@@ -9,6 +9,10 @@ class ModelJurusan extends CI_Model {
     {
         return $this->db->get($this->table)->result();
     }
+	public function getLimit(){
+		return $this->db->limit('1')->get($this->table)->result();
+		//return $this->db->get('foto',1)->where('nama','logo');
+	}
 
     // function untuk get data by primary_key
     public function getByPrimaryKey($id)

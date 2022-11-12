@@ -44,3 +44,5 @@
 		</li>
 	</ul>
 </nav>
+<div class="<?= error_reporting(0)?>"></div>
+

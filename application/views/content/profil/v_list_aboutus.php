@@ -17,6 +17,7 @@
                 </p>
                 <p>
                 <?php foreach ($aboutus as $a): ?>
+					<span>
                     <div class="text"><?= $a->sejarah?></div>
                 </span>
                 <?php endforeach; ?>
@@ -26,6 +27,7 @@
                 </p>
                 <p>
                 <?php foreach ($aboutus as $a): ?>
+					<span>
                     <!-- <span style="font-size: 18px;"> -->
                     <div class="text"> <?= $a->visi?></div>
                 </span>
